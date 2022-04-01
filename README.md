@@ -1,4 +1,4 @@
-# github.io-server
+# meipuru
 Server code for my personal web site.
 
 ## Using skills
@@ -8,3 +8,9 @@ Server code for my personal web site.
  <a href="https://www.docker.com/" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/>
 </a>
+
+# License
+MIT
+
+# Author
+yuta519 (Yuta Kawamura)
