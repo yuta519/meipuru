@@ -1,7 +1,13 @@
 package main
 
-import "github.com/yuta519/meipuru/backend/cmd"
+import (
+	"flag"
+
+	"github.com/yuta519/meipuru/backend/cmd"
+)
 
 func main() {
-	cmd.Execute()
+	port := flag.String("port", "8000", "Listen port for the service")
+	flag.Parse()
+	cmd.Execute(*port)
 }

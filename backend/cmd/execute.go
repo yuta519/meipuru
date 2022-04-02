@@ -1,13 +1,15 @@
 package cmd
 
 import (
+	"fmt"
 	"log"
+	"net/http"
 
 	"github.com/yuta519/meipuru/backend/config"
 )
 
-func Execute() {
-	default_port := "8000"
-	log.Printf("A server is starting on %s/TCP.", default_port)
-	config.Router(default_port)
+func Execute(port string) {
+	log.Printf("A server is starting on %s/TCP.", port)
+	config.Router(port)
+	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%s", port), nil))
 }
