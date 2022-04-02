@@ -6,6 +6,6 @@ import (
 	"github.com/yuta519/meipuru/backend/controller/ping"
 )
 
-func Router(port string) {
+func Router() {
 	http.HandleFunc("/", ping.Ping)
 }
