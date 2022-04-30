@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
 
-import { TopPage } from "./scripts/pages";
+import { TopPage } from "./scripts/pages/Top";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
