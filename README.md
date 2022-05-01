@@ -13,4 +13,5 @@ Server code for my personal web site.
 MIT
 
 # Author
+a-aida (Akihito Aida)
 yuta519 (Yuta Kawamura)
