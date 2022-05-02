@@ -1,6 +1,7 @@
 import React from "react";
-import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
+import Link from "@mui/material/Link";
+import Typography from "@mui/material/Typography";
 import styled from "styled-components";
 
 export const GlobalFooter = () => {
@@ -12,19 +13,19 @@ export const GlobalFooter = () => {
       <StyledGrid container>
         <Grid item xs={2}></Grid>
         <Grid item xs={2}>
-          <Typography variant="body1" color="white" align="left">
+          <Link variant="body1" color="white" underline="hover" align="left">
             What is meipuru
-          </Typography>
+          </Link>
         </Grid>
         <Grid item xs={2}>
-          <Typography variant="body1" color="white" align="left">
+          <Link variant="body1" color="white" underline="hover" align="left">
             About Us
-          </Typography>
+          </Link>
         </Grid>
         <Grid item xs={2}>
-          <Typography variant="body1" color="white" align="left">
+          <Link variant="body1" color="white" underline="hover" align="left">
             Contact
-          </Typography>
+          </Link>
         </Grid>
         <Grid item xs={3} textAlign="right">
           kaede
