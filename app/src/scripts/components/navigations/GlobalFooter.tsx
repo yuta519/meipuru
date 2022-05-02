@@ -6,10 +6,11 @@ import styled from "styled-components";
 export const GlobalFooter = () => {
   return (
     <StyledFooter>
-      <Typography variant="h4" color="white" align="left">
+      <StyledServiceNameTypography variant="h4" color="white" align="left">
         meipuru
-      </Typography>
+      </StyledServiceNameTypography>
       <StyledGrid container>
+        <Grid item xs={2}></Grid>
         <Grid item xs={2}>
           <Typography variant="body1" color="white" align="left">
             What is meipuru
@@ -25,6 +26,9 @@ export const GlobalFooter = () => {
             Contact
           </Typography>
         </Grid>
+        <Grid item xs={3} textAlign="right">
+          kaede
+        </Grid>
       </StyledGrid>
       <StyledCopyright>
         <Typography variant="body2" color="white" align="center">
@@ -36,12 +40,15 @@ export const GlobalFooter = () => {
 };
 
 const StyledFooter = styled.section`
-  padding: 4em;
   background: #565252;
 `;
 
+const StyledServiceNameTypography = styled(Typography)`
+  padding: 0.5em;
+`;
+
 const StyledGrid = styled(Grid)`
-  margin-top: 2em;
+  margin-top: 0.5em;
 `;
 
 const StyledCopyright = styled.div`
