@@ -5,35 +5,33 @@ import styled from "styled-components";
 
 export const GlobalFooter = () => {
   return (
-    <>
-      <StyledFooter>
-        <Typography variant="h4" color="white" align="left">
-          meipuru
-        </Typography>
-        <StyledGrid container>
-          <Grid item xs={2}>
-            <Typography variant="body1" color="white" align="left">
-              What is meipuru
-            </Typography>
-          </Grid>
-          <Grid item xs={2}>
-            <Typography variant="body1" color="white" align="left">
-              About Us
-            </Typography>
-          </Grid>
-          <Grid item xs={2}>
-            <Typography variant="body1" color="white" align="left">
-              Contact
-            </Typography>
-          </Grid>
-        </StyledGrid>
-        <StyledCopyright>
-          <Typography variant="body2" color="white" align="center">
-            Copyright © meipuru {new Date().getFullYear()}
+    <StyledFooter>
+      <Typography variant="h4" color="white" align="left">
+        meipuru
+      </Typography>
+      <StyledGrid container>
+        <Grid item xs={2}>
+          <Typography variant="body1" color="white" align="left">
+            What is meipuru
           </Typography>
-        </StyledCopyright>
-      </StyledFooter>
-    </>
+        </Grid>
+        <Grid item xs={2}>
+          <Typography variant="body1" color="white" align="left">
+            About Us
+          </Typography>
+        </Grid>
+        <Grid item xs={2}>
+          <Typography variant="body1" color="white" align="left">
+            Contact
+          </Typography>
+        </Grid>
+      </StyledGrid>
+      <StyledCopyright>
+        <Typography variant="body2" color="white" align="center">
+          Copyright © meipuru {new Date().getFullYear()}
+        </Typography>
+      </StyledCopyright>
+    </StyledFooter>
   );
 };
 
