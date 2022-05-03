@@ -2,6 +2,7 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
+import TwitterIcon from '@mui/icons-material/Twitter';
 import styled from "styled-components";
 
 export const GlobalFooter = () => {
@@ -11,24 +12,26 @@ export const GlobalFooter = () => {
         meipuru
       </StyledServiceNameTypography>
       <StyledGrid container>
-        <Grid item xs={2}></Grid>
-        <Grid item xs={2}>
-          <Link variant="body1" color="white" underline="hover" align="left">
+        <Grid item xs={0.5}></Grid>
+        <Grid item xs={1}>
+          <Link variant="body1" color="white" underline="hover" align="center">
             What is meipuru
           </Link>
         </Grid>
-        <Grid item xs={2}>
-          <Link variant="body1" color="white" underline="hover" align="left">
+        <Grid item xs={1}>
+          <Link variant="body1" color="white" underline="hover" align="center">
             About Us
           </Link>
         </Grid>
-        <Grid item xs={2}>
-          <Link variant="body1" color="white" underline="hover" align="left">
+        <Grid item xs={1}>
+          <Link variant="body1" color="white" underline="hover" align="center">
             Contact
           </Link>
         </Grid>
+        <Grid item xs={2}></Grid>
+        <Grid item xs={2}></Grid>
         <Grid item xs={3} textAlign="right">
-          kaede
+          <TwitterIcon color="primary" />
         </Grid>
       </StyledGrid>
       <StyledCopyright>
